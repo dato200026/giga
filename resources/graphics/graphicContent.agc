@@ -1,0 +1,1 @@
+{"version":"1.5.0","children":[],"resources":{"gradients":{},"clipPaths":{},"meta":{"ux":{"symbols":[],"colorSwatches":[],"documentLibrary":{"version":4,"elements":[]},"gridDefaults":{"defaultGrid":null,"layoutOverrides":null}}}},"artboards":{"fb9d2597-2a3f-41bb-8cb7-221734074299":{"width":1360,"height":5872,"name":"Tousrism-LandingPage","x":0,"y":0}}}

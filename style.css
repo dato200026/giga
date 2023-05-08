@@ -1,0 +1,403 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header{
+    background-color: #f8dc0b;
+    padding-right:50px;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    cursor:pointer;
+    height:70px;
+}
+nav ul{
+    list-style:none;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    display:block;
+    padding:30px 20px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+nav ul li :hover{
+    background-color:blueviolet;
+}
+.carousel{
+    position:relative;
+    overflow:hidden;
+    height:80vh;
+}
+.carousel-image-text1{
+    position:absolute;
+    right:50%;
+    transform: translateX(50%);
+    color:white;
+    top:200px;
+    font-size:80px;
+    font-weight:100;
+}
+.carousel-image-text2{
+    position:absolute;
+    top:300px;
+    font-size:25px;
+    right:50%;
+    transform: translateX(50%);
+    color:white;
+}
+.tour-price{
+    position:absolute;
+    right:50%;
+    top:70px;
+    transform:translateX(50%);
+    z-index:200;
+    color:blue;
+    font-size:25px;
+}
+.logo{
+   position:absolute;
+   top:40px;
+   right:50%;
+   z-index:100;
+   transform:translateX(50%);
+   
+}
+.carousel-item{
+    width:100%;
+    position:absolute;   
+    opacity:0; 
+    
+}
+.carousel-item.active{
+    opacity:1;
+}
+.carousel-item img{
+    height:80vh;
+    width:100%;
+}
+.button{
+    background-color:transparent;
+    cursor:pointer;
+    border:0;
+    width:50px;
+    height:50px;
+    font-size:30px;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    color:white;
+}
+
+.previous-but{
+    left:60px;
+}
+.next-but{
+    right:60px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    flex-basis:70%;
+}
+.cards p{
+    color:#626262;
+}
+.cards img{
+    width:100%;
+    height:65%;
+    
+}
+.cards-section{
+    margin-top:5%;
+    display:flex;
+    padding-inline:5%;
+    justify-content: space-between;
+    
+}
+.cards-left{
+    flex-basis:25%;
+}
+.cards-left h2{
+    color:#626262;
+
+}
+.cards-left h1{
+    margin-top:8px;
+    margin-bottom:15px;
+}
+.cards-left p{
+    color:#626262;
+    width:70%;
+}
+.video-section img{
+    width:100%;
+    height:80vh;
+}
+.video-section {
+    position:relative;
+}
+.video-section .heading{
+    position:absolute;
+    right:50%;
+    transform: translateX(50%);
+    color:white;
+}
+.video-section h2{
+    top:100px;
+}
+.video-section h1{
+    top:130px;
+}
+.video-section video{
+    position:absolute;
+    right:50%;
+    bottom:0;
+    transform: translateX(50%);
+    z-index:100;
+    box-sizing: border-box;
+}
+.tours-information img{
+    width:45px;
+    height:45px;
+}
+.tours-information div{
+    text-align:center;
+}
+.tours-information{
+    margin-top:5%;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    gap:30px;
+}
+.tours-information h1{
+    font-weight:10;
+    font-size:16px;
+    color:#626262;
+}
+.tours-information h2{
+    font-weight:10;
+}
+.cards-gallery{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    height:50vh;
+    margin-bottom:50px;
+}
+.cards-gallery .card{
+    flex-basis:20%;
+    position:relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.cards-gallery .card img{
+    height:75%;
+    width:100%;
+}
+.cards-gallery .card span{
+    position:absolute;
+    background-color: gold;
+    color:black;
+    top:10px;
+    left:10px;
+    padding:5px;
+    text-transform: capitalize;
+}
+.offering{
+    text-align:center;
+    margin:40px 0;
+}
+.cards-gallery .card p{
+    text-align:center;
+    color:#626262;
+}
+.cards-gallery h3{
+    text-align:center;
+    margin:10px 0;
+    color:blue;
+}
+.surfing{
+    width:100%;
+    height:40vh;
+}
+.more-traveling-offer{
+    position:relative;
+}
+.elements{
+    position:absolute;
+    right: 50%;
+    top:70px;
+    transform: translateX(50%);
+    z-index:100;
+}
+.more-traveling-offer .elements h1{
+    text-transform: capitalize;
+    color:white;
+    
+}
+.more-traveling-offer .elements p{
+    color:white;
+    margin-top:10px;
+    margin-bottom:40px;
+    text-align:center;
+}
+.more-traveling-offer .elements input{
+    width:300px;
+    border-radius: 30px;
+    border:1px solid white;
+    padding:0 15px;
+    color:white;
+    height:40px;
+    background-color:transparent;
+    outline:none;
+
+}
+.more-traveling-offer .elements button{
+    border-radius: 30px;
+    margin-left:20px;
+    border:0;
+    width:100px;
+    height:40px;
+    color:white;
+    background-color:white;
+    text-transform: uppercase;
+    color:blue;
+    font-size:12px;
+}
+::placeholder{
+    color:white;
+}
+.more-traveling-offer .elements form{
+    width:450px;
+}
+.feedback-container{
+    padding:0 30px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+    gap:20px;
+}
+.feedback-container .feedback{
+    flex-basis:25%;
+    background-color: #c4bfbf;
+    padding:50px 30px;
+    text-align:center;
+}
+.feedback-container .feedback img{
+    border-radius: 50%;
+    width:80px;
+    height:80px;
+}
+.feedback-container .feedback h2{
+    color:white;
+    font-size:16px;
+    text-transform: capitalize;
+    color:blue;
+    margin-top:10px;
+    margin-bottom:25px;
+}
+.feedback-container .feedback h1{
+    font-size:60px;
+}
+.booking-trip{
+    position:relative;
+}
+.mountain-pic{
+    margin-top:30px;
+    width:100%;
+    height:70vh;
+}
+
+.booking-trip h1{
+    font-size:34px;
+    position:absolute;
+    color:white;
+    text-align:center;
+    bottom:100px;
+    right:50%;
+    transform: translateX(50%);
+}
+.booking-trip button{
+    position:absolute;
+    border-radius: 30px;
+    bottom:30px;
+    right:50%;
+    transform: translateX(50%);
+    background-color: aqua;
+    color:white;
+    padding:10px 30px;
+    border:0;
+}
+.countries-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+.countries-container .countries{
+   flex-basis:18%;
+   overflow: hidden;
+   height:60vh;
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.countries-container .countries::after {
+    display:block;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color:linear-gradient(to bottom,white,grey);
+  }
+.countries-container .countries .countries-info{
+   position: absolute;
+   bottom:0;
+   padding-left:15px;
+   padding-bottom:5px;
+   color:white;
+   font-weight:10;
+}
+.countries-container .countries .countries-info p{
+    font-size:14px;
+}
+.countries-container .countries button{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    color:white;
+    background-color: aqua;
+    border:0;
+    font-size:18px;
+}
+.countries-container .countries.indonesia{
+    background:url('resources/indonesia.jpeg');
+    background-position: 30%;
+}
+.countries-container .countries.italy{
+    background:url('resources/italy.jpg');
+    background-position: 68%;
+
+}
+.countries-container .countries.thailand{
+    background:url('resources/thailand.jpg');
+}
+.countries-container .countries.singapore{
+    background:url('resources/singapore.jpg');
+    background-position: 68%;
+}
